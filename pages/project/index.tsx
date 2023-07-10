@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
 import { useRouter } from "next/router";
-import React from "react";
+import React, { useEffect } from "react";
 import axios from "axios";
 
 function Project({ projectData }: any) {
@@ -10,6 +10,10 @@ function Project({ projectData }: any) {
   const handleClick = (id: number) => {
     router.push(`/project/${id}`);
   };
+
+  useEffect(() => {
+    if (router.isReady) return;
+  }, [router.isReady]);
 
   return (
     <div className="page-layout">
