@@ -7,3 +7,7 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
+
+import dns from "dns";
+
+dns.setDefaultResultOrder("ipv4first");

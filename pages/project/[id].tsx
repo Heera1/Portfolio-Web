@@ -3,7 +3,29 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { AiFillHome, AiFillGithub } from "react-icons/ai";
 import { BsArrowLeft } from "react-icons/bs";
-import { DataType } from "../api/project/[id]";
+
+interface DataType {
+  id: number;
+  name: string;
+  summary: string;
+  role: string;
+  stack: string[];
+  info: {
+    period: string;
+    division: string;
+    members: string;
+    link: string;
+    github: string;
+  };
+  slide: SlideType[];
+  statusCode?: number;
+  message?: string;
+}
+
+interface SlideType {
+  text: string;
+  img: string;
+}
 
 export interface ProjectDataProps {
   projectData: DataType[];
@@ -94,7 +116,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }: ParamsProps) {
-  const res = await fetch(`http://localhost:3000/api/project/${params.id}`);
+  const res = await fetch(`http://127.0.0.1:3000/api/project/${params.id}`);
   const projectData = await res.json();
   return {
     props: { projectData },

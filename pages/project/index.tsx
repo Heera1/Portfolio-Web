@@ -65,7 +65,7 @@ function Project({ projectData }: any) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch("http://localhost:3000/api/projectinfo");
+  const res = await fetch("http://127.0.0.1:3000/api/projectinfo");
   const projectData = await res.json();
 
   return {
