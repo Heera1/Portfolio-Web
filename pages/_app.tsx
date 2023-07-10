@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import Layout from "../src/components/Layout";
+import Layout from "../components/Layout";
 import { useRouter } from "next/router";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
