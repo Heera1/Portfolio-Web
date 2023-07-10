@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         landingPage:
-          "url(https://github.com/Heera1/Portfolio_Website/assets/99064439/d04eb7a8-5b71-47b8-a190-e0895e2080b1)",
+          "url(https://github.com/Heera1/Portfolio-Web/assets/99064439/02c6fc97-c409-45ac-b84e-be72d2a76745)",
       },
       fontFamily: {
         BacasimeAntique: ["Bacasime Antique", "serif"],

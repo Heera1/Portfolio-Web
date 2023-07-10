@@ -22,7 +22,7 @@
     @apply text-lg font-bold;
   }
   .page-layout {
-    @apply mt-10 px-6 w-[60rem] h-[60rem];
+    @apply mt-10 px-6 w-[60rem] h-[100rem] max-h-screen;
   }
   .page-title {
     @apply text-4xl font-bold italic mb-4;

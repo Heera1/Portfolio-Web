@@ -14,6 +14,7 @@ const navArr: NavArrType[] = [
   { id: 2, name: "Project", link: "/project" },
   { id: 3, name: "UX/UI Design", link: "/portfolio" },
   { id: 4, name: "Contact", link: "/contact" },
+  { id: 5, name: "Image", link: "/image2" },
 ];
 
 export default function NavBar() {

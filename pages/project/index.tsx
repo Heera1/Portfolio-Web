@@ -4,6 +4,15 @@ import { useRouter } from "next/router";
 import React, { useEffect } from "react";
 import { projectInfo } from "../../src/arr";
 
+interface ProjectInfoDataType {
+  name: string;
+  summary: string;
+  role: string | null;
+  stack: string[];
+  img: string;
+  id: number;
+}
+
 function Project() {
   const router = useRouter();
 
@@ -20,7 +29,7 @@ function Project() {
       <h1 className="px-2 text-white bg-MainColor page-title">PROJECT</h1>
       <div className="grid grid-cols-3 gap-10 mt-10 mb-24">
         {projectInfo &&
-          projectInfo.map((data: any) => (
+          projectInfo.map((data: ProjectInfoDataType) => (
             <button
               className="bg-gray-200 h-[22rem] rounded-2xl relative ease-in-out duration-300 hover:-translate-y-6"
               onClick={(e) => handleClick(data.id)}

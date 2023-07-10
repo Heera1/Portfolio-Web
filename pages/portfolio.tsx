@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Portfolio() {
   return (
-    <div className="h-auto page-layout">
+    <div className="page-layout">
       <h1 className="px-2 text-white bg-MainColor page-title">
         UX/UI DESIGN PORTFOLIO
       </h1>
