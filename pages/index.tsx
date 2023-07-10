@@ -11,7 +11,7 @@ const Home: NextPage = () => {
 
   return (
     <div className="flex items-center justify-center h-screen">
-      <div className="relative border-blue-500 border-10" onClick={handleClick}>
+      <div className="relative" onClick={handleClick}>
         <motion.div
           className="w-64 h-64 rounded-full cursor-pointer bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
           animate={{
