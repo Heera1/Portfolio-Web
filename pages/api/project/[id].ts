@@ -1,29 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 
-export interface DataType {
-    id: number;
-    name: string;
-    summary: string;
-    role: string;
-    stack: string[];
-    info: {
-        period: string;
-        division: string;
-        members: string;
-        link: string;
-        github: string;
-    };
-    slide: SlideType[];
-    statusCode?: number;
-    message?: string;
-}
-
-interface SlideType {
-    text: string;
-    img: string;
-}
-
-const projectData: DataType[] = [
+const projectData = [
     {
         id: 1,
         name: 'Portfolio',
