@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import DefaultModal from "../components/DefaultModel";
+import DefaultModal from "../src/components/DefaultModel";
 
 const Contact = () => {
   const form = useRef(null);
