@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started
 
 ### First, get the git clone.
@@ -27,3 +28,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
   <br/>
 
 ## ~ Thanks You! ~
+=======
+# Portfolio-Web
+>>>>>>> 138120e9f31d2f6a5c8d0bfaa341eadef9140598
