@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { AiFillHome, AiFillGithub } from "react-icons/ai";
 import { BsArrowLeft } from "react-icons/bs";
+import axios from "axios";
 
 interface DataType {
   id: number;
@@ -116,8 +117,8 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }: ParamsProps) {
-  const res = await fetch(`http://127.0.0.1:3000/api/project/${params.id}`);
-  const projectData = await res.json();
+  const res = await axios.get(`http://127.0.0.1:3000/api/project/${params.id}`);
+  const projectData = res.data;
   return {
     props: { projectData },
   };

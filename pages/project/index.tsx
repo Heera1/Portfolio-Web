@@ -2,6 +2,7 @@ import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
 import { useRouter } from "next/router";
 import React from "react";
+import axios from "axios";
 
 function Project({ projectData }: any) {
   const router = useRouter();
@@ -65,8 +66,8 @@ function Project({ projectData }: any) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch("http://127.0.0.1:3000/api/projectinfo");
-  const projectData = await res.json();
+  const res = await axios.get("http://127.0.0.1:3000/api/projectinfo");
+  const projectData = res.data;
 
   return {
     props: { projectData },
