@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { AiFillHome, AiFillGithub } from "react-icons/ai";
 import { BsArrowLeft } from "react-icons/bs";
 import axios from "axios";
+import { useEffect } from "react";
 
 interface DataType {
   id: number;
@@ -41,6 +42,10 @@ function Project({ projectData }: ProjectDataProps) {
   const handleClick = () => {
     router.back();
   };
+
+  useEffect(() => {
+    if (router.isReady) return;
+  }, [router.isReady]);
 
   return (
     <div className="h-auto page-layout">
