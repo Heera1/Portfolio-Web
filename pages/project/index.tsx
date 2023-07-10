@@ -66,7 +66,7 @@ function Project({ projectData }: any) {
 }
 
 export async function getStaticProps() {
-  const res = await axios.get("http://127.0.0.1:3000/api/projectinfo");
+  const res = await axios.get("http://127.0.0.1:3001/api/projectinfo");
   const projectData = res.data;
 
   return {

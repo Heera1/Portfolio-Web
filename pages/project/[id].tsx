@@ -117,7 +117,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }: ParamsProps) {
-  const res = await axios.get(`http://127.0.0.1:3000/api/project/${params.id}`);
+  const res = await axios.get(`http://127.0.0.1:3001/api/project/${params.id}`);
   const projectData = res.data;
   return {
     props: { projectData },
