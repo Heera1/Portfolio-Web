@@ -6,9 +6,10 @@
 git clone https://github.com/Heera1/Portfolio-Web.git
 ```
 
-### Second, open the project and open the localhost:3000 server.
+### Second, open the project and open the localhost:3000.
 
 ```bash
+npm install
 npm run dev
 ```
 
