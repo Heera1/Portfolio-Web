@@ -19,7 +19,7 @@ const projectInfo: ProjectInfoDataType[] = [
 
 export default function handler(
   req: NextApiRequest,
-  res: NextApiResponse<ProjectInfoDataType[]>
+  res: NextApiResponse
 ) {
   try {
     if (!Array.isArray(projectInfo)) {

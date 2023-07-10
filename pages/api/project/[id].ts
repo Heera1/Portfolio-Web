@@ -153,7 +153,6 @@ const projectData: DataType[] = [
 export default function handler(
     req: NextApiRequest,
     res: NextApiResponse
-    // res: NextApiResponse<DataType[]>
 ) {
     try {
         if (!Array.isArray(projectData)) {
