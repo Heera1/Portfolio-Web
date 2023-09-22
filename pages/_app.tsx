@@ -11,7 +11,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       <Component {...pageProps} />
     </Layout>
   ) : (
-    <div className="bg-no-repeat bg-landingPage">
+    <div className="bg-center bg-no-repeat bg-cover bg-landingPage">
       <Component {...pageProps} />
     </div>
   );

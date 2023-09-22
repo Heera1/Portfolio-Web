@@ -8,8 +8,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        landingPage:
-          "url(https://github.com/Heera1/Portfolio-Web/assets/99064439/02c6fc97-c409-45ac-b84e-be72d2a76745)",
+        landingPage: "url(../public/background.jpg)",
       },
       fontFamily: {
         BacasimeAntique: ["Bacasime Antique", "serif"],
@@ -20,5 +19,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 };
