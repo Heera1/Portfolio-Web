@@ -4,7 +4,7 @@ import profile from "../public/profile.jpg";
 
 const About: NextPage = () => {
   return (
-    <div className="px-6 page-layout">
+    <div className="px-6">
       <div className="scroll-container">
         <h1 className="page-title">ABOUT ME</h1>
         <h2 className="px-2 mb-4 text-3xl italic font-bold text-white bg-MainColor sm:text-2xl">

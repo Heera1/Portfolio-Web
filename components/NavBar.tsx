@@ -21,7 +21,7 @@ const navArr: NavArrType[] = [
 
 export default function NavBar({ onClick }: NavClickType) {
   return (
-    <div className="ml-8">
+    <div className="ml-4">
       <Link href="/">
         <h1 className="mt-10 mb-6 text-4xl italic font-Belanosima sm:hidden lg:block">
           Ji Eun An
@@ -36,7 +36,7 @@ export default function NavBar({ onClick }: NavClickType) {
           ))}
         </div>
       </div>
-      <div className="flex my-6">
+      <div className="flex py-4 sm:hidden lg:flex">
         <Link href="https://velog.io/@caecus">
           <BiLogoBlogger size={35} className="nav-icon" />
         </Link>

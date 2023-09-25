@@ -43,7 +43,7 @@ function Project() {
   }, [router.isReady]);
 
   return (
-    <div className="page-layout">
+    <div>
       {projectData &&
         post.map((data: DataType) => (
           <div key={data.id} className="scroll-container">

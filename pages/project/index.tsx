@@ -25,7 +25,7 @@ function Project() {
   }, [router.isReady]);
 
   return (
-    <div className="page-layout">
+    <div>
       <div className="scroll-container">
         <h1 className="px-2 text-white bg-MainColor page-title">PROJECT</h1>
         <div className="grid grid-cols-2 gap-4 mt-10 mb-24 lg:grid-cols-3 lg:gap-10">
