@@ -61,7 +61,7 @@ const Contact = () => {
           setShowModal={setShowModal}
         />
       )}
-      <div className="page-layout">
+      <div>
         <h1 className="px-2 text-white bg-MainColor page-title">Contact</h1>
         <form ref={form} onSubmit={sendEmail}>
           <div className="form-container">
@@ -96,7 +96,7 @@ const Contact = () => {
           </div>
           <button
             type="submit"
-            className="float-right px-24 py-4 text-lg text-gray-800 bg-gray-400 rounded-lg text-md hover:text-white hover:bg-MainColor"
+            className="float-right px-10 py-2 text-gray-800 bg-gray-400 rounded-lg text-md lg:text-lg lg:py-4 lg:px-24 hover:text-white hover:bg-MainColor"
           >
             보내기
           </button>

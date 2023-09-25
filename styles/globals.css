@@ -10,7 +10,7 @@
     @apply sm:w-[30rem] md:w-[48rem] lg:w-[80rem] m-auto h-full;
   }
   .nav {
-    @apply px-2 py-4 block hover:bg-gray-200 mb-2 rounded-lg ml-2;
+    @apply px-2 py-4 block hover:bg-gray-200 mb-2 rounded-lg w-[10rem];
   }
   .landing-p {
     @apply text-white text-lg md:text-2xl lg:text-3xl;
@@ -22,7 +22,7 @@
     @apply text-lg font-bold;
   }
   .page-layout {
-    @apply lg:pt-10 sm:pt-4 px-6 sm:w-[29rem] md:w-[47rem] lg:w-[62rem] min-h-screen h-full;
+    @apply lg:pt-10 sm:pt-4 px-6 sm:w-[29rem] md:w-[47rem] lg:w-[62rem] lg:h-full;
   }
   .page-title {
     @apply text-4xl font-bold italic mb-4;

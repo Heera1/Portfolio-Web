@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function Portfolio() {
   return (
-    <div className="relative page-layout">
-      <div className="scroll-container">
+    <div>
+      <div className="">
         <h1 className="sticky top-0 px-2 py-2 text-white bg-MainColor page-title">
           UX/UI DESIGN PORTFOLIO
         </h1>
