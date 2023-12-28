@@ -43,6 +43,7 @@ const Contact = () => {
             setUserMessage("");
             setUserName("");
             alert();
+            console.log("form", form.current);
           },
           (error) => {
             setModalMsg(`이메일 전송 실패 TT`);
