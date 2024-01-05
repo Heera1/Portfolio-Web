@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Belanosima:wght@600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes blink {
+  0%, 50%, 100% {
+      opacity: 1;
+  }
+  25%, 75% {
+      opacity: 0;
+  }
+}
+
+@layer base {
+  .global {
+    @apply sm:w-[30rem] md:w-[48rem] lg:w-[80rem] m-auto h-full;
+  }
+  .nav {
+    @apply px-2 py-4 block hover:bg-gray-200 mb-2 rounded-lg w-[10rem];
+  }
+  .landing-p {
+    @apply text-white text-lg md:text-2xl lg:text-3xl;
+  }
+  .about-h2 {
+    @apply mt-10 text-3xl font-bold bg-MainColor px-2 text-white italic;
+  }
+  .about-h3 {
+    @apply text-lg font-bold;
+  }
+  .page-layout {
+    @apply lg:pt-10 sm:pt-4 px-6 sm:w-[29rem] md:w-[47rem] lg:w-[62rem] lg:h-full;
+  }
+  .page-title {
+    @apply text-4xl font-black italic mb-4;
+  }
+  .form-container {
+    @apply flex justify-between w-72 mb-2;
+  }
+  .form-label {
+    @apply mr-2 text-lg font-medium;
+  }
+  .form-input {
+    @apply p-1 bg-gray-200 rounded-md border-none;
+  }
+  .nav-icon {
+    @apply mr-2 hover:text-MainColor;
+  }
+  .scroll-container {
+    @apply w-full overflow-y-auto h-full scrollbar-hide sm:overflow-y-scroll;
+  }
+}
+
+.blink {
+  animation: blink 1s step-end infinite;
+} 
